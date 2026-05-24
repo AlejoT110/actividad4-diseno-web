@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto · Alejandro Torres</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ════ NAVBAR ════ -->
+  <nav class="navbar navbar-expand-lg at-navbar sticky-top">
+    <div class="at-container">
+      <a href="index.html" class="navbar-brand">AT</a>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-lg-4 mt-3 mt-lg-0 pb-3 pb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a href="index.html"     class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="sobre-mi.html"  class="nav-link">Sobre mí</a></li>
+          <li class="nav-item"><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="contacto.html"  class="nav-link active">Contacto</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <button id="darkModeToggle" class="dark-mode-btn" title="Cambiar tema">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ms-auto d-flex align-items-center gap-2 d-lg-none">
+        <button id="darkModeToggleMobile" class="dark-mode-btn" title="Cambiar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════ CONTACTO ════ -->
+  <section class="py-5">
+    <div class="at-container">
+
+      <!-- Título de sección -->
+      <p class="mono-label reveal">CONTACTO</p>
+      <h1 class="hero-title mb-3 reveal">Hablemos.</h1>
+      <p class="fs-5 mb-5 reveal" style="color: var(--at-secondary);">
+        ¿Tienes un proyecto de datos en mente? Escríbeme.
+      </p>
+
+      <div class="row g-5 align-items-start">
+
+        <!-- ── Columna izquierda: información de contacto ── -->
+        <div class="col-lg-5 reveal">
+
+          <!-- Email -->
+          <div class="mb-2">
+            <span class="contact-info-label">
+              <i class="fas fa-envelope me-1"></i>Email
+            </span>
+            <p class="contact-info-value">alejandro@example.com</p>
+          </div>
+          <hr class="border-at" />
+
+          <!-- LinkedIn -->
+          <div class="mb-2">
+            <span class="contact-info-label">
+              <i class="fab fa-linkedin-in me-1"></i>LinkedIn
+            </span>
+            <p class="contact-info-value">linkedin.com/in/alejandro-torres</p>
+          </div>
+          <hr class="border-at" />
+
+          <!-- GitHub -->
+          <div class="mb-2">
+            <span class="contact-info-label">
+              <i class="fab fa-github me-1"></i>GitHub
+            </span>
+            <p class="contact-info-value">github.com/alejandro-torres</p>
+          </div>
+          <hr class="border-at" />
+
+          <!-- Ubicación -->
+          <div class="mb-2">
+            <span class="contact-info-label">
+              <i class="fas fa-map-marker-alt me-1"></i>Ubicación
+            </span>
+            <p class="contact-info-value">Medellín, Colombia</p>
+          </div>
+          <hr class="border-at" />
+
+          <!-- Disponibilidad -->
+          <div class="contact-avail mt-4 p-3 rounded-3" style="background: var(--at-cyan-light); border: 1px solid #a5f3fc;">
+            <p class="mb-1" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--at-cyan-dark); font-weight: 500;">
+              DISPONIBILIDAD
+            </p>
+            <p class="mb-0 fw-semibold" style="color: var(--at-navy); font-size: 14px;">
+              Disponible para proyectos freelance y consultoría en datos.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- ── Columna derecha: formulario de contacto ── -->
+        <div class="col-lg-7 reveal">
+          <div class="contact-form-card">
+            <h2 class="fw-bold mb-4" style="font-size: 18px;">Envíame un mensaje</h2>
+
+            <form id="contactForm" novalidate>
+
+              <!-- Nombre -->
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre completo"
+                  required
+                />
+                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+                <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+              </div>
+
+              <!-- Asunto -->
+              <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="asunto"
+                  name="asunto"
+                  placeholder="¿En qué te puedo ayudar?"
+                  required
+                />
+                <div class="invalid-feedback">Por favor ingresa el asunto.</div>
+              </div>
+
+              <!-- Mensaje -->
+              <div class="mb-4">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Cuéntame sobre tu proyecto, idea o consulta..."
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Por favor escribe tu mensaje.</div>
+              </div>
+
+              <!-- Botón enviar -->
+              <button type="submit" class="btn btn-primary btn-lg px-4">
+                <i class="fas fa-paper-plane me-2"></i>Enviar mensaje
+              </button>
+
+              <!-- Mensaje de éxito (oculto) -->
+              <div id="successMsg" class="alert alert-success mt-3 d-none" role="alert">
+                <i class="fas fa-check-circle me-2"></i>
+                ¡Mensaje enviado! Te responderé pronto.
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer>
+    <div class="at-container d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div>
+        <p class="mb-1" style="color: var(--at-footer-text); font-size: 13px;">© 2026 Alejandro Torres · Data Engineer</p>
+        <p class="mb-0" style="color: var(--at-footer-text); font-size: 12px;">Medellín, Colombia</p>
+      </div>
+      <div class="text-center">
+        <div class="d-flex gap-2 mb-1 justify-content-center">
+          <span class="footer-social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></span>
+          <span class="footer-social-icon" title="GitHub"><i class="fab fa-github"></i></span>
+          <span class="footer-social-icon" title="Email"><i class="fas fa-envelope"></i></span>
+        </div>
+        <small style="color: var(--at-footer-text); font-size: 11px;">LinkedIn · GitHub · Email</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+  <script>
+    const mobile = document.getElementById('darkModeToggleMobile');
+    if (mobile) {
+      mobile.addEventListener('click', () => {
+        document.getElementById('darkModeToggle').click();
+        const icon = mobile.querySelector('i');
+        const theme = document.documentElement.getAttribute('data-theme');
+        icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+      });
+    }
+  </script>
+</body>
+</html>

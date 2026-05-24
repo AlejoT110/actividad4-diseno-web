@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí · Alejandro Torres</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ════ NAVBAR ════ -->
+  <nav class="navbar navbar-expand-lg at-navbar sticky-top">
+    <div class="at-container">
+      <a href="index.html" class="navbar-brand">AT</a>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto gap-lg-4 mt-3 mt-lg-0 pb-3 pb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a href="index.html"     class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="sobre-mi.html"  class="nav-link active">Sobre mí</a></li>
+          <li class="nav-item"><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="contacto.html"  class="nav-link">Contacto</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <button id="darkModeToggle" class="dark-mode-btn" title="Cambiar tema">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ms-auto d-flex align-items-center gap-2 d-lg-none">
+        <button id="darkModeToggleMobile" class="dark-mode-btn" title="Cambiar tema">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════ ENCABEZADO ════ -->
+  <section class="pt-5 pb-4">
+    <div class="at-container">
+      <p class="mono-label reveal">SOBRE MÍ</p>
+      <h1 class="page-title mb-2 reveal">Alejandro Torres</h1>
+      <p class="fs-5 reveal" style="color: var(--at-secondary);">Data Engineer · Medellín, Colombia</p>
+    </div>
+  </section>
+
+  <!-- ════ BIO ════ -->
+  <section class="pb-5">
+    <div class="at-container">
+      <div class="row g-5 align-items-start">
+
+        <!-- Avatar -->
+        <div class="col-md-auto reveal">
+          <div class="at-avatar">AT</div>
+        </div>
+
+        <!-- Bio texto -->
+        <div class="col">
+          <h2 class="fw-bold mb-4 reveal" style="font-size: 22px;">Bio</h2>
+          <p class="reveal" style="color: var(--at-secondary); line-height: 1.75; font-size: 15px;">
+            Soy Data Engineer con más de 3 años construyendo infraestructura de datos sobre Google Cloud
+            Platform. Me especializo en pipelines de streaming con Pub/Sub y Apache Beam sobre Dataflow,
+            procesamiento de datos a gran escala y el desarrollo de feature stores para modelos de Machine
+            Learning en producción.
+          </p>
+          <p class="mt-3 reveal" style="color: var(--at-secondary); line-height: 1.75; font-size: 15px;">
+            Antes de enfocarme en ingeniería de datos, trabajé como Data Analyst desarrollando dashboards
+            y análisis descriptivos para empresas colombianas. Esa experiencia me dio una perspectiva
+            valiosa: entiendo tanto el negocio como la infraestructura técnica que lo soporta.
+          </p>
+          <p class="mt-3 reveal" style="color: var(--at-secondary); line-height: 1.75; font-size: 15px;">
+            Mi enfoque actual combina ingeniería de datos con MLOps, construyendo sistemas end-to-end que
+            van desde la ingesta de datos hasta el serving de modelos en producción. Me interesa
+            particularmente la confiabilidad de los sistemas, la calidad de datos y la automatización
+            de pipelines con mínima intervención manual.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STACK TÉCNICO ════ -->
+  <section class="py-5 border-top border-at">
+    <div class="at-container">
+      <p class="mono-label reveal">HABILIDADES</p>
+      <h2 class="section-title mb-4 reveal">Stack técnico</h2>
+
+      <div class="row g-4">
+
+        <!-- Cloud & Infra -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <p class="skill-card-title">
+              <i class="fas fa-cloud me-2" style="color: var(--at-cyan);"></i>Cloud &amp; Infra
+            </p>
+            <div>
+              <span class="skill-badge">GCP</span>
+              <span class="skill-badge">Cloud Run</span>
+              <span class="skill-badge">Cloud Scheduler</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">BigQuery</span>
+              <span class="skill-badge">Terraform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Streaming & Data -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <p class="skill-card-title">
+              <i class="fas fa-stream me-2" style="color: var(--at-cyan);"></i>Streaming &amp; Data
+            </p>
+            <div>
+              <span class="skill-badge">Pub/Sub</span>
+              <span class="skill-badge">Dataflow</span>
+              <span class="skill-badge">Apache Beam</span>
+              <span class="skill-badge">Cassandra/Scylla</span>
+              <span class="skill-badge">Snowflake</span>
+              <span class="skill-badge">Feast</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lenguajes & ML -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="skill-card">
+            <p class="skill-card-title">
+              <i class="fas fa-code me-2" style="color: var(--at-cyan);"></i>Lenguajes &amp; ML
+            </p>
+            <div>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">PyTorch</span>
+              <span class="skill-badge">Pandas</span>
+              <span class="skill-badge">C#</span>
+              <span class="skill-badge">Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ TRAYECTORIA ════ -->
+  <section class="py-5 border-top border-at">
+    <div class="at-container pb-4">
+      <p class="mono-label reveal">EXPERIENCIA</p>
+      <h2 class="section-title mb-5 reveal">Trayectoria</h2>
+
+      <!-- Entrada 1 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-marker">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div>
+          <p class="timeline-date">2024 — Actualidad</p>
+          <p class="timeline-role">Data Engineer</p>
+          <p class="timeline-company">Empresa de tecnología · Medellín, Colombia</p>
+          <p class="timeline-desc">
+            Diseño y mantenimiento de pipelines de streaming sobre GCP usando Pub/Sub y Apache Beam.
+            Implementación de feature store con Feast + Cassandra para servir features a modelos de ML
+            en producción. Reducción del tiempo de ingesta un 40 % mediante optimización de ventanas
+            de procesamiento en Dataflow.
+          </p>
+        </div>
+      </div>
+
+      <!-- Entrada 2 -->
+      <div class="timeline-item reveal">
+        <div class="timeline-marker">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div>
+          <p class="timeline-date">2022 — 2024</p>
+          <p class="timeline-role">Data Analyst</p>
+          <p class="timeline-company">Empresa Col · Medellín, Colombia</p>
+          <p class="timeline-desc">
+            Desarrollo de dashboards en Looker Studio y Power BI para equipos de ventas, marketing y
+            finanzas. Automatización de reportes semanales con Python y Google Sheets API.
+            Análisis descriptivo y predictivo sobre datos de clientes con pandas y Scikit-learn.
+          </p>
+        </div>
+      </div>
+
+      <!-- Educación -->
+      <div class="timeline-item reveal">
+        <div class="timeline-marker">
+          <div class="timeline-dot" style="background: var(--at-cyan);"></div>
+        </div>
+        <div>
+          <p class="timeline-date">2018 — 2022</p>
+          <p class="timeline-role">Ingeniería de Sistemas</p>
+          <p class="timeline-company">Universidad · Medellín, Colombia</p>
+          <p class="timeline-desc">
+            Énfasis en bases de datos, redes y desarrollo de software. Proyecto de grado: sistema de
+            monitoreo de tráfico de red en tiempo real con Apache Kafka y Python.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer>
+    <div class="at-container d-flex align-items-center justify-content-between flex-wrap gap-3">
+      <div>
+        <p class="mb-1" style="color: var(--at-footer-text); font-size: 13px;">© 2026 Alejandro Torres · Data Engineer</p>
+        <p class="mb-0" style="color: var(--at-footer-text); font-size: 12px;">Medellín, Colombia</p>
+      </div>
+      <div class="text-center">
+        <div class="d-flex gap-2 mb-1 justify-content-center">
+          <span class="footer-social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></span>
+          <span class="footer-social-icon" title="GitHub"><i class="fab fa-github"></i></span>
+          <span class="footer-social-icon" title="Email"><i class="fas fa-envelope"></i></span>
+        </div>
+        <small style="color: var(--at-footer-text); font-size: 11px;">LinkedIn · GitHub · Email</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const mobile = document.getElementById('darkModeToggleMobile');
+    if (mobile) {
+      mobile.addEventListener('click', () => {
+        document.getElementById('darkModeToggle').click();
+        const icon = mobile.querySelector('i');
+        const theme = document.documentElement.getAttribute('data-theme');
+        icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+      });
+    }
+  </script>
+</body>
+</html>
